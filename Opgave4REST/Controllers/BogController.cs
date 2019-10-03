@@ -63,9 +63,9 @@ namespace Opgave4REST.Controllers
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(string Isbn13id)
+        public void Delete(string id)
         {
-            Bog bog = Get(Isbn13id);
+            Bog bog = Get(id);
             if (bog != null)
             {
                 list.Remove(bog);
